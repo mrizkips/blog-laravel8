@@ -14,7 +14,9 @@ class AdminCategoryController extends Controller
      */
     public function index()
     {
-        //
+        return view('dashboard.categories.index', [
+            'categories' => Category::all()
+        ]);
     }
 
     /**
@@ -34,17 +36,6 @@ class AdminCategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Category $category)
     {
         //
     }
